@@ -1,0 +1,66 @@
+// 1. Colors
+//Body color
+$colorBody: var(--body-color);
+//TYPOGRAPHY
+//Main text
+$colorMain: var(--text-color);
+//h1,h2,h3,h4,h5,h6
+$colorH1: var(--text-color);
+$colorH2: var(--text-color);
+$colorH3: var(--text-color);
+$colorH4: #000000;
+$colorH5: #000000;
+$colorH6: #000000;
+//colors
+$accent: #8ee3a6;
+//Slider colors
+$dotsCol: #000000;
+$dotsActiveCol: $accent;
+body {
+    background: $colorBody;
+    color: $colorMain;
+}
+
+h1 {
+    color: $colorH1;
+}
+
+h2 {
+    color: $colorH2;
+}
+
+h3 {
+    color: $colorH3;
+}
+
+h4 {
+    color: $colorH4;
+}
+
+h5 {
+    color: $colorH5;
+}
+
+h6 {
+    color: $colorH6;
+}
+
+a {
+    color: $colorMain;
+}
+
+:root {
+    --body-color: #000000;
+    --text-color: #ffffff;
+    --reverse-text-color: #000000;
+    --border-color: #8ee3a6;
+    --accent-color: #000000;
+}
+
+[data-theme="dark"] {
+    --accent-color: #8ee3a6;
+    --body-color: #ffffff;
+    --text-color: #000000;
+    --reverse-text-color: #ffffff;
+    --border-color: #000000;
+}
