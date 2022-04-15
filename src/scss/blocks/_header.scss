@@ -36,7 +36,7 @@ $headerBurgerMenuBg: #ffffff;
     &__logo {
         z-index: 3;
         @include md-d {
-            margin-left: 22px;
+            margin-left: -20px;
         }
         &:hover {
             svg {}

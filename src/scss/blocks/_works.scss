@@ -1,5 +1,8 @@
 .works {
     margin-top: 200px;
+    @include md-d{
+        margin-top: 100px;
+    }
     &__title {
         display: flex;
         justify-content: center;
@@ -10,6 +13,9 @@
         &._active {
             transform: translate(0px, 0px);
             opacity: 1;
+        }
+        @include md-d{
+            margin-bottom: 20px;
         }
     }
     &__wrapper {

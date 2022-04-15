@@ -36,9 +36,6 @@ $(document).ready(function () {
 	}).trigger('resize');
 })
 
-// Counter
-
-
 
 
 //Dark theme switch
@@ -52,7 +49,6 @@ function switchTheme(e) {
         localStorage.setItem('data-theme', 'light');
     }
 }
-
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 

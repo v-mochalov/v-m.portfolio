@@ -35,8 +35,7 @@ $(document).ready(function () {
       }
     }
   }).trigger('resize');
-}); // Counter
-//Dark theme switch
+}); //Dark theme switch
 
 var toggleSwitch = document.querySelector('.toggle-button');
 
