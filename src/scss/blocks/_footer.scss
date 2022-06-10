@@ -1,0 +1,36 @@
+.footer{
+	background: #000;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #fff;
+	&__wrapper{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include md-d{
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&__text{
+		font-size: 22px;
+	}
+	&__number{
+		display: flex;
+		align-items: center;
+		font-size: 22px;
+		a{
+			svg{
+				path{
+					fill: $accent;
+				}
+			}
+		}
+		@include md-d{
+			margin-top: 40px;
+		}
+	}
+	&__call{
+		margin-left: 20px;
+	}
+}

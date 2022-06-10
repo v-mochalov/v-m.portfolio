@@ -1,8 +1,7 @@
 .works {
-    margin-top: 200px;
-	
+    padding-top: 200px;	
     @include md-d{
-        margin-top: 100px;
+        padding-top: 100px;
     }
 	 .container{
 		display: flex;
