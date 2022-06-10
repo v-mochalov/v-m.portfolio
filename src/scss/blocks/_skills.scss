@@ -1,0 +1,187 @@
+.skill{
+	padding-bottom: 100px;
+	.container{
+		display: flex;
+		flex-direction: column;		
+	}
+	h2{
+		align-self: flex-start;
+		margin-bottom: 50px;
+		margin-left: 40px;
+	}
+	&__contain{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__menu{
+		display: flex;
+		flex-direction: column;
+		opacity: 0;
+		transform: scale(0.2);
+		transition: 1.2s linear;
+		&._active {
+			opacity: 1;
+			transform: scale(1);
+			transition: 1.2s linear;
+		}
+	}
+	&__item{
+		position: relative;
+		padding-left: 30px;
+		font-size: 20px;
+		margin-top: 15px;
+		text-transform: uppercase;
+		&:first-child{
+			margin-top: 0;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--border-color);
+		}
+
+	}
+	&__wrapper{
+		width: 500px;
+		display: flex;
+		flex-direction: column;				
+	}
+	&__content{
+		width: 100%;
+		margin-top: 20px;		
+		&--html{
+			.skill__progress {
+				max-width: 90%;
+				height: 100%;		
+				position: relative;						
+			 }
+			.skill__progress::after {
+				content: "90%";		
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+				height: 15px;
+				width: 30px;
+				background: #fff;
+				position: absolute;
+				padding: 2px 3px;
+				border-radius: 4px;
+				right: -18px;
+				top: -30px;
+				color: #000;
+			 }			 
+			 .skill__progress::before {
+				content: "";
+				position: absolute;
+				width: 0; 
+				height: 0; 
+				right: -5px;
+				top: -12px;  
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid #fff;
+			 }
+		}
+		&--css{
+			.skill__progress {
+				max-width: 85%;
+				height: 100%;
+				position: relative;
+			 }			 
+			 .skill__progress::after {
+				content: "85%";
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+				height: 15px;
+				width: 30px;
+				background: #fff;
+				position: absolute;
+				padding: 2px 3px;
+				border-radius: 4px;
+				right: -18px;
+				top: -30px;
+				color: #000;
+			 }			 
+			 .skill__progress::before {
+				content: "";
+				position: absolute;
+				width: 0; 
+				height: 0; 
+				right: -5px;
+				top: -12px;  
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid #fff;
+			 }
+		}
+		&--js{
+			.skill__progress {
+				max-width: 50%;
+				height: 100%;
+				position: relative;
+			 }
+			 
+			 .skill__progress::after {
+				content: "50%";
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+				height: 15px;
+				width: 30px;
+				background: #fff;
+				position: absolute;
+				padding: 2px 3px;
+				border-radius: 4px;
+				right: -18px;
+				top: -30px;
+				color: #000;
+			 }
+			 
+			 .skill__progress::before {
+				content: "";
+				position: absolute;
+				width: 0; 
+				height: 0; 
+				right: -5px;
+				top: -12px;  
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 6px solid #fff;
+			 }
+		}
+	}
+	&__title{
+		color: var(--text-color);
+  		font-weight: 700;
+	}
+	&__progress-bar {
+		background: #404040;
+		border-radius: 20px;
+		width: 100%;
+		height: 30px;
+		margin-top: 5px;	
+	 }	 
+	&__progress {	 
+		border-radius: 20px;
+		background: var(--border-color);
+		&._active {
+			animation: 2.5s ease 0s 1 loadBars; 
+		}		
+	 } 
+	@keyframes loadBars{
+		0% {
+		  width: 0;
+		}
+		100% {
+		  width: 100%;
+		}
+		
+	 }
+}

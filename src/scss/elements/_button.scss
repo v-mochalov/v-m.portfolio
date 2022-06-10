@@ -10,16 +10,28 @@
   line-height: 22px;
   transition: 0.3s linear;
   color: rgb(0, 0, 0);
-  width: 345px;
-  height: 48px;
+  width: 200px;
+  height: 35px;
   border-radius: 12px;
   @media (max-width: 350px) {
     width: 300px;
   }
   &:hover {
-    transition: 0.3s linear;
-    color: $accent;
-    background: #ffffff;
-    border: 2px solid $accent;
+    transition: 0.3s linear;    
+    
+    
+  }
+  &--form{
+	border: 2px solid #000;
+	&:hover{
+		color: #000;
+		background: #fff;
+	}
+  }
+  &--works{
+	&:hover{
+		color: #000;
+		background: #fff;
+	}
   }
 }
